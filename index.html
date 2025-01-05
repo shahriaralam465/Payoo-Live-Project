@@ -1,11 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payoo MFS</title>
+
+    <!-- daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
-        <h1>This is dummy page for payoo</h1>
+
+<body class="font grid place-items-center min-h-screen">
+    <main>
+
+        <!-- phone mockup -->
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+                <div class="artboard artboard-demo bg-[#f4f5f7] phone-3 p-0">
+                    <!-- log in container -->
+                    <div class="grid place-items-center w-[90%]">
+                        <!-- image container -->
+                        <div
+                            class="border-[10px] border-[#0874f2] rounded-full w-[316px] h-[316px] flex justify-center items-start">
+                            <img src="./img/log-in logo.png" alt="" class="w-20 mt-5">
+                        </div>
+                        <!-- form -->
+                        <div class="card shade bg-base-100 w-full mt-[-150px] border border-gray-100">
+                            <form class="card-body w-full">
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Mobile Number</span>
+                                    </label>
+                                    <input id="input-number" type="text" placeholder="Enter Your Number" class="input input-bordered rounded-full bg-gray-100 border-none" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">4 Digit Pin</span>
+                                    </label>
+                                    <input id="input-pin" type="password" placeholder="Enter Your 4 Digit pin" class="input input-bordered rounded-full bg-gray-100 border-none"
+                                        required />
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button id="btn-log-in" class="btn btn-primary rounded-full bg-[#0874f2] border-none text-lg text-white">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    </main>
+    <!-- log in script -->
+     <script src="./js/login.js"></script>
 </body>
+
 </html>
