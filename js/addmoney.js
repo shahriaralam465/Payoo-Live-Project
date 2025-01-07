@@ -13,7 +13,7 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
         return;
     }
 
-    if (acNumber === '0011223344' && pinNumber === 1234) {
+    if (acNumber === '11223344' && pinNumber === 1234) {
         console.log('money added');
 
         const balance = accountBalance + addMoney;
@@ -32,7 +32,7 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
                  <img class="bg-slate-200 p-2 rounded-full" src="./img/grp.png" alt="">
                     <div>
                         <h3 class="text-lg font-bold">Add Money</h3>
-                        <p class="text-sm"> Money Added: ${addMoney}Tk. New Balance: ${balance}Tk.</p>
+                        <p class="text-sm"> Money Added: <b>${addMoney}Tk.</b> New Balance: <b>${balance}Tk.</b></p>
                         <p class="text-[8px]">
                             <b>${currentTime}</b> 
                         </p>
